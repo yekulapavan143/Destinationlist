@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #80deea); /* Gradient background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+h1 {
+    color: #ff4081; /* Bright pink */
+    font-size: 2.5em; /* Larger heading */
+    text-shadow: 2px 2px #ffab00; /* Text shadow for depth */
+}
+
+h2 {
+    color: #2196f3; /* Bright blue */
+}
+
+.auth-section, .register-section {
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ffab00; /* Amber border */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for sections */
+}
+
+input[type="text"], input[type="password"], input[type="file"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #4caf50; /* Green border */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ffab00; /* Amber */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #ff8f00; /* Darker amber on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#authMessage, #regMessage {
+   color: red; 
+   margin-top: 10px; 
+   font-weight: bold; 
+}
+
+/* Wishlist styling */
+#wishlist {
+   list-style-type: none; /* Remove default list styling */
+   padding-left: 0; /* Remove padding */
+}
+
+#wishlist li {
+   display: flex; /* Flexbox for alignment */
+   align-items: center; /* Center items vertically */
+   justify-content: space-between; /* Space out items */
+   margin-bottom: 15px; /* Spacing between items */
+   padding: 10px;
+   background-color: rgba(255,255,255,0.9); /* Semi-transparent white for wishlist items */
+   border-radius: 5px;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#wishlist img {
+   max-width: 50px; /* Limit image size */
+   border-radius: 5px; /* Round image corners */
+   margin-right: 10px; /* Space between image and text */
+}
+
+/* Footer styling */
+footer {
+   margin-top:20px;
+   color:#673ab7; /* Purple color for footer text */
+   font-size: small;
+}

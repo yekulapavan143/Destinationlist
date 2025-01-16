@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Wishlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Wishlist</h1>
+
+        <!-- User Authentication Section -->
+        <div id="authSection" class="auth-section">
+            <h2 id="authTitle">Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="authBtn">Login</button>
+            <p id="authMessage"></p>
+            <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+        </div>
+
+        <!-- Registration Section -->
+        <div id="registerSection" class="register-section" style="display:none;">
+            <h2>Register</h2>
+            <input type="text" id="regUsername" placeholder="Username" required>
+            <input type="password" id="regPassword" placeholder="Password" required>
+            <button id="registerBtn">Register</button>
+            <p id="regMessage"></p>
+            <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+        </div>
+
+        <!-- Wishlist Section -->
+        <div id="wishlistSection" class="wishlist-section" style="display:none;">
+            <input type="text" id="destinationInput" placeholder="Add a destination...">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="addBtn">Add</button>
+            <ul id="wishlist"></ul>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
