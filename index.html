@@ -8,35 +8,50 @@
 </head>
 <body>
     <div class="container">
-        <h1>Travel Wishlist</h1>
-
-        <!-- User Authentication Section -->
+        <!-- Authentication Section -->
         <div id="authSection" class="auth-section">
-            <h2 id="authTitle">Login</h2>
+            <h1>Login</h1>
             <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
             <button id="authBtn">Login</button>
             <p id="authMessage"></p>
-            <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+            <p>Don't have an account? <span id="showRegister" style="cursor: pointer; color: #2196f3;">Register Here</span></p>
         </div>
 
         <!-- Registration Section -->
-        <div id="registerSection" class="register-section" style="display:none;">
-            <h2>Register</h2>
+        <div id="registerSection" class="register-section" style="display: none;">
+            <h1>Register</h1>
             <input type="text" id="regUsername" placeholder="Username" required>
             <input type="password" id="regPassword" placeholder="Password" required>
             <button id="registerBtn">Register</button>
             <p id="regMessage"></p>
-            <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+            <p>Already have an account? <span id="showLogin" style="cursor: pointer; color: #2196f3;">Login Here</span></p>
         </div>
 
-        <!-- Wishlist Section -->
-        <div id="wishlistSection" class="wishlist-section" style="display:none;">
-            <input type="text" id="destinationInput" placeholder="Add a destination...">
-            <input type="file" id="imageInput" accept="image/*">
-            <button id="addBtn">Add</button>
-            <ul id="wishlist"></ul>
+        <!-- Wishlist Section (Visible only after login) -->
+        <div id="wishlistSection" style="display: none;">
+            <h1>Your Travel Wishlist</h1>
             <button id="logoutBtn">Logout</button>
+
+            <div class="form-section">
+                <input type="text" id="destinationInput" placeholder="Enter destination" required>
+                <input type="file" id="imageInput" required>
+                <input type="date" id="dateInput" required>
+                <select id="categoryInput" required>
+                    <option value="Beach">Beach</option>
+                    <option value="Mountain">Mountain</option>
+                    <option value="City">City</option>
+                    <option value="Historical">Historical</option>
+                </select>
+                <button id="addBtn">Add Destination</button>
+            </div>
+
+            <h3>Search Destinations</h3>
+            <input type="text" id="searchInput" placeholder="Search destinations...">
+
+            <button id="sortBtn">Sort Alphabetically</button>
+
+            <div id="wishlist" class="wishlist-grid"></div>
         </div>
     </div>
 
