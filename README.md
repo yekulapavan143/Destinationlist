@@ -43,3 +43,14 @@ The **Travel Wishlist** is a web application that allows users to create and man
 - Ability to search destinations by name or category.
 - Option to edit or update existing destination details.
 - Add user profile management (e.g., change password, profile picture).
+## Contributing
+
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is open-source and available under the MIT License.
+
+---
+
+Created with 💙 by [Yekula Pavan]
